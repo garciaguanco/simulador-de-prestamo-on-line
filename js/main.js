@@ -58,7 +58,6 @@ if (confirmacion === "si" || confirmacion === "sí") {
    
 const alertMessage = `Monto del préstamo: $${prestamo.monto}\nTasa de interés anual: ${prestamo.tasa}%\nPlazo del préstamo: ${prestamo.plazo} meses\nPago mensual: $${prestamo.pagoMensual}`;
     
-    alert
 alert(alertMessage);
 } 
 
