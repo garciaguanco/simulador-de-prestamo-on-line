@@ -78,3 +78,7 @@ header{
 .navegacion .submenu .hijos li a{
 	display: block;
 }
+
+h1{
+	color: white;
+}

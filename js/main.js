@@ -66,3 +66,8 @@ else {
    
 console.log("Resultados no mostrados en el alert.");
 }
+
+// aplicando el DOM
+document.querySelector('h1').textContent = 'La mejor Tasa del Mercado!'
+console.log(document.querySelector('h1'))
+
