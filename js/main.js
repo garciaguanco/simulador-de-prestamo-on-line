@@ -31,9 +31,9 @@ function calcularPagoMensual() {
   const h2Monto = document.createElement("h2");
   h2Monto.textContent = "El monto del prestamo es: " + monto;
   const h2Tasa = document.createElement("h2");
-  h2Tasa.textContent = "El plazo del prestamo es: " + tasa;
+  h2Tasa.textContent =  "La tasa del prestamo es: " + tasa;
   const h2Plazo = document.createElement("h2");
-  h2Plazo.textContent = "La tasa del prestamo es: " + plazo;
+  h2Plazo.textContent = "El plazo del prestamo es: " + plazo;
   const h2PagoMensual = document.createElement("h2");
   h2PagoMensual.textContent = "El pago mensual es de: " + pagoMensual;
 
@@ -54,7 +54,7 @@ function verPrestamosEnLocalStorage() {
 
   // Obtemenmos el valor de la key prestamos de localStorage
   const prestamosEnLocalStorage = localStorage.getItem("prestamos");
-  
+
   // Creamos un titulo para los prestamos de localStorage
   const h2 = document.createElement("h2");
   h2.textContent = "Prestamos en localStorage";
