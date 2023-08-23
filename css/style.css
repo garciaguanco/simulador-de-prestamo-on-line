@@ -82,3 +82,157 @@ header{
 h1{
 	color: white;
 }
+
+.hijos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    list-style: none;
+    padding: 0;
+}
+
+.hijos li {
+    margin: 10px 0;
+}
+
+/* Calcula tu prestamo */
+.container {
+    margin: 0px auto;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.h-sub {
+    line-height: 1.2em;
+    font-weight: 500;
+    font-family: "Poppins", serif;
+    letter-spacing: 1px;
+}
+
+.theme-color {
+    color: #001F91;
+}
+
+.h-decor {
+    display: inline-block;
+    background-color: #001F91;
+}
+
+/* simaulador */
+
+.input-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*calculadora*/
+
+.pb-5, .py-5 {
+    padding-bottom: 4.5rem !important;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
+
+.p-3 {
+    padding: 1.5rem !important;
+}
+
+.border {
+    border: 1px solid #dee2e6 !important;
+}
+
+.bg-white {
+    background-color: #fff !important;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    word-wrap: break-word;
+}
+
+h1, .h1 {
+    font-size: 2.5rem;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.75rem;
+    font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.mb-3, .my-3 {
+    margin-bottom: 1.5rem !important;
+}
+
+p {
+    margin-top: 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+

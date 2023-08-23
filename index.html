@@ -2,35 +2,69 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style.css" />
         <title>Simulador de Prestamos On Line</title>
     </head>
     <body>
         <header>
-          <h1>Este Documento es una prueba</h1>
+            <h1>Este Documento es una prueba</h1>
             <div class="interior">
-              <a href="#" class="logo" target="blank"><img src="../Simulador de prestamos/Imagenes/pngtree-financial-and-accounting-logo-design-template-back-space-logo-image_318273.jpg" alt="Logo"></a>
+                <a href="#" class="logo" target="blank"><img src="../Simulador de prestamos/Imagenes/logo prestamo.jpg" alt="Logo" /></a>
 
-              <nav class="navegacion">
-                <ul>
-                  <li><a href="#" target="blank">Inicio</a></li>
-                  <li><a href="#" target="blank">Acerca de</a></li>
-                  <li class="submenu">
-                    <a href="#" target="blank">Productos</a>
-                    
-                    <ul class="hijos">
-                      <li><a href="">Prestamo Personal</a></li>
-                      <li><a href="">Prestamo Automor</a></li>
-                      <li><a href="">Prestamo Hipotecario</a></li>
-                      <li><a href="">Prestamo Caja Policial</a></li>
-                      <li><a href="">Seguro hogar</a></li>
+                <nav class="navegacion">
+                    <ul>
+                        <li><a href="#" target="blank">Inicio</a></li>
+                        <li><a href="#" target="blank">Acerca de</a></li>
+                        <li class="submenu">
+                            <a href="#" target="blank">Productos</a>
+
+                            <ul class="hijos">
+                                <li><a href="">Prestamo Personal</a></li>
+                                <li><a href="">Prestamo Automor</a></li>
+                                <li><a href="">Prestamo Hipotecario</a></li>
+                                <li><a href="">Prestamo Caja Policial</a></li>
+                                <li><a href="">Seguro hogar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" target="blank">Contacto</a></li>
                     </ul>
-                  </li>
-                  <li><a href="" target="blank">Contacto</a></li>
-                </ul>
-              </nav>
+                </nav>
             </div>
-          </header>
+        </header>
+        <div class="section page-content-first">
+          <div class="container">
+            <div class="row">
+              <div class="col-md col-lg-12">
+                <div class="pr-0 pr-lg-12">
+                  <div class="text-center mb-2  mb-md-3 mb-lg-4">
+                    <div class="h-sub theme-color">Calculadora</div>
+                    <h1 id="calcularP1">Calcula tu Prestamo Inteligente</h1>
+        
+        <div class="py-5" id="calculadora">
+          <div class="card p-3 bg-white col-md-5 border mr-auto">
+            <h1>Calculadora</h1>
+            <p class="mb-3">Calcule su préstamo de manera ágil y rápida</p>
+        <div style="margin-top: 100px;">
+            <div>
+                <label> Ingrese monto</label>
+                <input id="monto" type="text" />
+            </div>
+            <div>
+                <label> ingrese la tasa en %</label>
+                <input id="tasa" type="text" />
+            </div>
+            <div>
+                <label>Ingrese el plazo</label>
+                <input id="plazo" type="text" />
+            </div>
+        </div>
+      </div>
+    </div>
+        <button onclick="calcularPagoMensual()" type="button">calcular</button>
+
+        <button id="ver-localStorage-prestamos" onclick="verPrestamosEnLocalStorage()">
+            Ver los prestamos en localStorage
+        </button>
     </body>
     <script src="./js/main.js"></script>
 </html>
