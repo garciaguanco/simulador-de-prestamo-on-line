@@ -71,6 +71,57 @@ function verPrestamosEnLocalStorage() {
   });
 }
 
+function limpiarDatos() {
+  localStorage.clear();
+
+// selecciono los h2 y los borro del DOM
+  const elementsH2 = document.querySelectorAll("h2");
+  elementsH2.forEach((elemento) => elemento.remove());
+
+// selecciono los h5 y los borro del DOM
+  const elementsH5 = document.querySelectorAll("h5");
+  elementsH5.forEach((elemento) => elemento.remove());
+
+  Toastify({
+    text: "Datos borrados",
+    duration: 1000,
+    destination: "https://github.com/apvarun/toastify-js",
+    newWindow: true,
+    close: true,
+    gravity: "bottom", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(to right, #00b09b, #96c93d)",
+    },
+    onClick: function () {}, // Callback after click
+  }).showToast();
+}
+
+function obtenerUsuario() {
+  fetch("https://reqres.in/api/users/2")
+    .then((response) => {
+      return response.json();
+    })
+    .then((jsonResponse) => {
+      const user = jsonResponse.data;
+      const email = document.createElement("h1");
+      const name = document.createElement("h2");
+      email.textContent = user.email;
+      name.textContent = user.first_name + " " + user.last_name;
+      document.body.appendChild(email);
+      document.body.appendChild(name);
+
+      const avatar = document.createElement("img");
+      avatar.src = user.avatar;
+      document.body.appendChild(avatar);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
 // aplicando el DOM
 document.querySelector("h1").textContent = "La mejor Tasa del Mercado!";
 console.log(document.querySelector("h1"));
+
